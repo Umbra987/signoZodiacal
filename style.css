@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#principal{
+.principal{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,7 +22,7 @@
     flex-flow: column wrap;
 }
 
-#principal .cuestionario input{
+.principal .cuestionario .entradas{
     padding: 10px 15px 10px;
     width: 100%;
     max-width: 370px;
@@ -33,58 +33,82 @@
     font-size: 130%;
 }
 
-#principal .cuestionario .dia:focus{
+input:focus{
     outline: none;
-    box-shadow: none;
-    border: 5px solid blue ;
-}
-
-
-#principal h1{
-    position: absolute;
-    font-family: 'Gloock', serif;
-    font-size: 300%;
-    font-weight: bold;
-    top: 30%;
-}
-
-select{
-    outline: none;
-    cursor: pointer;
-    padding: 10px 15px 10px;
-    width: 100%;
-    max-width: 400px;
-    height: 70px;
-    border-radius: 20px;
-    border: 0;
-    margin: 10px;
-    font-size: 130%;
-}
-
-option:hover{
-    color: white;
-    background-color: black;
-    cursor: pointer;
 }
 
 .send{
-    position: absolute;
+    background-color: white;
+    color: black;
     padding: 10px 15px 10px;
-    width: 20% !important;
+    width: 100%;
+    max-width: 370px;
     height: 50px;
     border-radius: 20px;
     border: 0;
     margin: 10px;
     font-size: 130%;
-    background-color: white;
-    cursor: pointer;
-    bottom: 30%;
 }
 
 .send:hover{
-    color: white;
     background-color: black;
-    border: 0;
+    color: white;
+    cursor: pointer;
 }
 
 
+/*Pagina de cada signo  */
+
+/*Pagina Base */
+
+.signo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.signo h1{
+    margin-top: 20px;
+    font-size: 100px;
+}
+
+.signo h2{
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.description{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: beige;
+
+}
+
+.description h2 b{
+    font-size: 40px;
+}
+
+.description h3{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#fechaSigno{
+    margin: 10px 5px 10px 2px;
+}
+
+.none{
+    display: none;
+}

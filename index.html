@@ -14,28 +14,27 @@
 </head>
 <body>
    
-    <div id="principal">
+    <div id="principal" class="principal none">
         <h1>Cual es tu signo zodiacal?</h1>
         <div class="cuestionario">
-        <select name="Meses">
-            <option>Selecciona un mes</option>
-            <option value="enero">Enero</option>
-            <option value="febrero">Febrero</option>
-            <option value="marzo">Marzo</option>
-            <option value="abril">Abril</option>
-            <option value="mayo">Mayo</option>
-            <option value="junio">Junio</option>
-            <option value="julio">Julio</option>
-            <option value="agosto">Agosto</option>
-            <option value="septiembre">Septiembre</option>
-            <option value="octubre">Octubre</option>
-            <option value="noviembre">Noviembre</option>
-            <option value="diciembre">Diciembre</option>
-          </select>
-        <input type="text" class="dia" placeholder="Ingrese su dia de nacimiento" required>
-        <input class="send" type="submit" value="Enviar">
-    </div>  
-        
+            <input type="text" class="entradas" id="mes" placeholder="Ingrese su mes de nacimiento" required>
+            <input type="number" class="entradas" id="dia" placeholder="Ingrese su dia de nacimiento" required>
+            <input id="send" class="send" type="submit" value="Enviar">
+        </div> 
     </div>
+
+    <div id="signo" class="signo">
+        <h1>Tu signo es:</h1>
+        <h2>Sagitario</h2>
+
+        <div class="description">
+            <h2><b>Description:</b></h2>
+            <h3 id="fechaSigno">Fecha:</h3>
+            <h3 id="textoSigno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusantium nemo laudantium illo soluta dolores magni optio officiis aliquid, velit fugiat odit veniam dolorum quidem, libero ea accusamus labore nobis.</h3>
+        </div>
+    </div>
+
+
+ <script src="JavaScript.js"></script>   
 </body>
 </html>
