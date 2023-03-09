@@ -77,8 +77,9 @@ input:focus{
     font-size: 100px;
 }
 
-.signo h2{
+.signo #nameSigno{
     font-size: 80px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
@@ -100,13 +101,17 @@ input:focus{
     font-size: 40px;
 }
 
-.description h3{
-    font-size: 25px;
-    font-weight: 200;
-}
 
 #fechaSigno{
+    font-size: 30px;
+    font-weight: bold;
     margin: 10px 5px 10px 2px;
+}
+
+#textoSigno{
+    display: flex;
+    text-align: justify;    
+    font-size: 20px;
 }
 
 .none{
